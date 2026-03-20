@@ -1,0 +1,142 @@
+/**
+ * @file: pavan.profile.config.ts
+ * @author: Pavan Salunkhe
+ * @summary: A passionate MERN Stack Developer & Problem Solver.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "React.js",      
+    "JavaScript",    
+    "HTML5",         
+    "CSS3 / SCSS",   
+    "TailwindCSS",   
+  ],
+  backend: [
+    "Node.js",       
+    "Express.js",    
+    "MongoDB",       
+    "REST APIs",     
+    "JWT Auth",      
+  ],
+  tools: [
+    "Git & GitHub",
+    "Postman",
+    "VS Code",
+    "AWS (Basics)",
+    "Linux"
+  ]
+};
+
+// --------------------------------------------------
+// 2. PROJECT EXPERIENCE (Reverse Chronological)
+// --------------------------------------------------
+
+class ProjectPortfolio {
+
+  /**
+   * FEATURED PROJECT
+   * @project Connectly
+   * @type Real-Time Video Conferencing App
+   */
+  public async Connectly(): Promise<ProjectImpact> {
+    const stack = ["React", "Node.js", "WebRTC", "Socket.IO"];
+    
+    const features = [
+      "Real-time video & audio communication",
+      "Multi-user video conferencing",
+      "Live chat system",
+      "Room-based join via unique ID"
+    ];
+
+    const achievement = "Implemented low-latency peer-to-peer communication using WebRTC";
+
+    return { stack, features, achievement };
+  }
+
+  /**
+   * PROJECT
+   * @project Alumni Connect
+   * @type Full Stack MERN Platform
+   */
+  public AlumniConnect(): void {
+    this.stack = ["MongoDB", "Express", "React", "Node.js"];
+    
+    this.features = [
+      "User authentication (JWT)",
+      "Alumni-student networking system",
+      "Job & internship posting",
+      "Search & filter alumni profiles"
+    ];
+
+    // Built scalable backend APIs and dynamic frontend UI
+  }
+}
+
+// --------------------------------------------------
+// 3. ACHIEVEMENTS & LEARNING
+// --------------------------------------------------
+
+interface Achievement {
+  title: string;
+  description: string;
+}
+
+const achievements: Achievement[] = [
+  {
+    title: "DSA Problem Solving",
+    description: "Solved 180+ problems across arrays, strings, stacks & queues"
+  },
+  {
+    title: "Full Stack Projects",
+    description: "Built real-world MERN applications with authentication & real-time features"
+  },
+  {
+    title: "Continuous Learning",
+    description: "Currently improving DSA, React & Backend development"
+  }
+];
+
+// --------------------------------------------------
+// 4. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  ["Degree", "B.E Information Technology (Currently Learning)"]
+]);
+
+// --------------------------------------------------
+// 5. STATUS
+// --------------------------------------------------
+
+const STATUS = {
+  availability: "Open to Internships & Entry-Level Roles",
+  focus: ["MERN Stack", "DSA", "System Design Basics"],
+  mindset: "Consistently improving & building real-world projects 🚀"
+};
+
+export default new ProjectPortfolio();
+
+```bash
+/**
+ * TERMINAL OUTPUT
+ * ---------------------------------------
+ * $ pavan --status
+ * > Status: Open to Opportunities
+ * > Role: MERN Stack Developer (Fresher)
+ * > Projects Loaded: Connectly | Alumni Connect
+ * > Skills: React | Node | MongoDB | WebRTC
+ * > Education: B.E IT (Learning)
+ * > Location: Global / Remote
+ * > Loading Assets... [||||||||||] 100%
+ * > Ready.
+ */
+
+
+
+
+
