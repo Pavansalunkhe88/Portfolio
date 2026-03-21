@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Dock from './compontes/Dock'
 import Nav from './compontes/Nav'
+import Cursor from './compontes/Cursor'
 import Github from './compontes/windows/Github'
 import Note from './compontes/windows/Note'
 import Resume from './compontes/windows/Resume'
@@ -21,6 +22,7 @@ function App() {
   return (
     
       <main >
+        <Cursor />
         <Nav/>
         <Dock windowState={windowState} setwindowState={setwindowState}/>
        {windowState.github &&  <Github windowName="github" setwindowState={setwindowState}/>}
