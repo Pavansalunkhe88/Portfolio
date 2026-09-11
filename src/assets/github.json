@@ -10,21 +10,21 @@
   },
   {
     "id": 2,
-    "image": "https://images.unsplash.com/photo-1585974738771-84483dd9f89f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmlkZW8lMjBjb25mZXJlbmNlfGVufDB8fDB8fHww",
-    "title": "Connectly",
-    "description": "Connectly is a real-time video conferencing web application built using modern web technologies, enabling seamless communication through video, audio, and chat. The platform allows users to create or join virtual meeting rooms and interact with others in real-time, making it ideal for online meetings, remote collaboration, and virtual classrooms.",
-    "tags": ["React", "Node.js", "Express", "MongoDB"],
-    "repoLink": "https://github.com/Pavansalunkhe88/Connectly",
-    "demoLink": null
+    "image": "https://plus.unsplash.com/premium_photo-1681297399454-fec2cd6c0618?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "AgentArena",
+    "description": "AgentArena is a next-generation Multi-AI Comparison Platform where users can pit two AI models against each other and let an independent Judge AI determine the winner.",
+    "tags": ["React", "Node.js", "Express", "MongoDB","TypeScript","Multi_Model_Agents","Langchain","Langraph"],
+    "repoLink": "https://github.com/Pavansalunkhe88/AgentArena",
+    "demoLink": "https://agentarena-11z3.onrender.com"
   },
   {
     "id": 3,
-    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RvY2slMjBtYXJrZXR8ZW58MHx8MHx8fDA%3D",
-    "title": "MockZerodha",
-    "description": "About MockZerodha trading platform built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project simulates the core functionalities of an online trading platform, including user authentication, stock market data display, and portfolio management.",
-    "tags": ["React", "Node.js", "Express", "MongoDB"],
-    "repoLink": "https://github.com/Pavansalunkhe88/MockZerodha",
-    "demoLink": null
+    "image": "https://plus.unsplash.com/premium_photo-1673125287084-e90996bad505?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGh8ZW58MHx8MHx8fDA%3D",
+    "title": "Vastra Elite",
+    "description": "Vastra Elite is a modern and stylish fashion e-commerce web application designed to provide users with a seamless online shopping experience. The platform allows customers to explore fashion collections, browse products, view detailed product information, add items to their cart, and enjoy a smooth and responsive shopping experience.",
+    "tags": ["React", "Node.js", "Express", "MongoDB","Authentication","Google Oauth","Payment Gateway"],
+    "repoLink": "https://github.com/Pavansalunkhe88/Vastra-Elite",
+    "demoLink": "https://vastra-elite.onrender.com"
    }
   
 ]

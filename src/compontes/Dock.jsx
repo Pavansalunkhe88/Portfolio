@@ -6,6 +6,14 @@ function Dock({ windowState, setwindowState }) {
     <div>
       <footer className="dock">
         <div
+          className="icon finder"
+          onClick={() => {
+            setwindowState((state) => ({ ...state, finder: true }));
+          }}
+        >
+          <img src="/doc-icons/finder.svg" alt="" />
+        </div>
+        <div
           className="icon github"
           onClick={() => {
             setwindowState((state) => ({ ...state, github: true }));

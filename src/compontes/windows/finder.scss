@@ -1,0 +1,263 @@
+.finder-window {
+  display: flex;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+    sans-serif;
+  background: #1e1e1e;
+}
+
+/* ─── Sidebar ─── */
+.finder-sidebar {
+  width: 160px;
+  min-width: 160px;
+  background: rgba(30, 30, 30, 0.95);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  .sidebar-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-heading {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 0.5rem 0.75rem 0.35rem;
+    margin: 0;
+  }
+
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    cursor: default;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.85);
+    border-radius: 0.35rem;
+    margin: 0 0.35rem;
+    transition: background 0.12s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    &.active {
+      background: rgba(0, 122, 255, 0.35);
+      color: #fff;
+    }
+
+    .sidebar-icon {
+      width: 16px;
+      height: 16px;
+      opacity: 0.85;
+    }
+  }
+}
+
+/* ─── Main Content ─── */
+.finder-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #252525;
+}
+
+/* ─── Path Bar ─── */
+.finder-pathbar {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  background: rgba(40, 40, 40, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  min-height: 32px;
+
+  .back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: background 0.12s ease;
+    padding: 0;
+    flex-shrink: 0;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+  }
+
+  .breadcrumb-trail {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .breadcrumb-sep {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .breadcrumb-label {
+    cursor: pointer;
+    transition: color 0.12s ease;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    &.current {
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 500;
+      cursor: default;
+    }
+  }
+}
+
+/* ─── Items Grid ─── */
+.finder-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 90px);
+  grid-auto-rows: min-content;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  overflow-y: auto;
+  align-content: start;
+
+  /* macOS styled scrollbar */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
+.finder-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.25rem;
+  border-radius: 0.5rem;
+  cursor: default;
+  transition: background 0.12s ease;
+  user-select: none;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  &.selected {
+    background: rgba(0, 122, 255, 0.25);
+
+    .finder-item-label {
+      background: #0a84ff;
+      color: #fff;
+      border-radius: 0.2rem;
+      padding: 0.05rem 0.35rem;
+    }
+  }
+
+  .finder-item-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.65rem;
+    padding: 0.6rem;
+    transition: transform 0.15s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+    }
+  }
+
+  &:active .finder-item-icon {
+    transform: scale(0.92);
+  }
+
+  .finder-item-label {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3;
+    padding: 0.05rem 0.2rem;
+    transition: all 0.12s ease;
+  }
+}
+
+/* ─── Icon background colors ─── */
+.icon-bg-github {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.icon-bg-pdf {
+  background: linear-gradient(135deg, rgba(255, 65, 78, 0.25), rgba(255, 25, 40, 0.15));
+}
+
+.icon-bg-note {
+  background: linear-gradient(135deg, rgba(255, 179, 87, 0.25), rgba(255, 153, 28, 0.15));
+}
+
+.icon-bg-spotify {
+  background: linear-gradient(135deg, rgba(78, 176, 33, 0.25), rgba(53, 142, 12, 0.15));
+}
+
+.icon-bg-cli {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.icon-bg-link {
+  background: linear-gradient(135deg, rgba(163, 97, 170, 0.25), rgba(142, 33, 154, 0.15));
+}
+
+.icon-bg-mail {
+  background: linear-gradient(135deg, rgba(105, 94, 255, 0.25), rgba(66, 52, 255, 0.15));
+}
+
+.icon-bg-calendar {
+  background: linear-gradient(135deg, rgba(105, 94, 255, 0.25), rgba(66, 52, 255, 0.15));
+}
+
+/* ─── Status Bar ─── */
+.finder-statusbar {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  background: rgba(40, 40, 40, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  min-height: 24px;
+}

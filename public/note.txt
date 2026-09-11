@@ -29,6 +29,15 @@ const TECH_STACK = {
     "VS Code",
     "AWS (Basics)",
     "Linux"
+  ],
+  Gen AI: [
+    "Python"
+    "LLM",
+    "LangChain"
+    "LangGraph"
+    "Prompt Engineering",
+    "RAG"
+    "Qdrant"
   ]
 };
 
@@ -39,21 +48,44 @@ const TECH_STACK = {
 class ProjectPortfolio {
 
   /**
-   * FEATURED PROJECT
-   * @project Connectly
-   * @type Real-Time Video Conferencing App
+   * PROJECT
+   * @project Agent Arena
+   * @type Compare, Evaluate, and Discover the Best AI Models in Real Time
    */
   public async Connectly(): Promise<ProjectImpact> {
-    const stack = ["React", "Node.js", "WebRTC", "Socket.IO"];
+    const stack = ["React", "Node.js", "TypeScript","Multi_AI_Models","langgraph"];
     
     const features = [
-      "Real-time video & audio communication",
-      "Multi-user video conferencing",
-      "Live chat system",
-      "Room-based join via unique ID"
+      "AI Battle Arena"
+      "Judge AI Evaluation"
+      "Detailed Scorecards"
+      "Performance Analytics"
+      "Multi-Model Support"
     ];
 
-    const achievement = "Implemented low-latency peer-to-peer communication using WebRTC";
+    const achievement = "AgentArena provides a transparent and interactive way to compare AI models side-by-side by running the same prompt through multiple models and automatically evaluating their responses.";
+
+    return { stack, features, achievement };
+  }
+
+  /**
+   * PROJECT
+   * @project Vastra Elite
+   * @type E-Commerce Platform for Cloths
+   */
+  public async Connectly(): Promise<ProjectImpact> {
+    const stack = ["React", "Node.js", "Express>js","Google Oauth","payment Gateway"];
+    
+    const features = [
+      "Browse a wide range of fashion and clothing products"
+      "Explore products by categories"
+      "Detailed product pages"
+      "Add products to the shopping cart"
+      "User authentication"
+      "Google Login integration"
+    ];
+
+    const achievement = "The platform allows customers to explore fashion collections, browse products, view detailed product information, add items to their cart, and enjoy a smooth and responsive shopping experience.";
 
     return { stack, features, achievement };
   }
@@ -88,16 +120,20 @@ interface Achievement {
 
 const achievements: Achievement[] = [
   {
-    title: "DSA Problem Solving",
-    description: "Solved 180+ problems across arrays, strings, stacks & queues"
+    title: "Full Stack Generative and Agentic AI with Python",
+    description: "Successfully completed the Full Stack Generative and Agentic AI with Python course, gaining hands-on knowledge in building Generative AI and Agentic AI applications using Python. The course included 32.5 hours of learning and was instructed by Hitesh Choudhary and Piyush Garg."
   },
   {
-    title: "Full Stack Projects",
-    description: "Built real-world MERN applications with authentication & real-time features"
+    title: "Complete 2026 Python BootCamp",
+    description: "Successfully completed the Complete 2026 Python Bootcamp by CodeWithHarry. This course strengthened my foundation in Python programming and practical coding skills, covering Python concepts from scratch."
   },
   {
-    title: "Continuous Learning",
-    description: "Currently improving DSA, React & Backend development"
+    title: "Full Stack MERN Developer – Delta Batch",
+    description: "improving React & Backend development"
+  },
+  {
+    title: "Alpha (DSA with Java)",
+    description: "improving DSA And Core Concepts"
   }
 ];
 
@@ -106,7 +142,7 @@ const achievements: Achievement[] = [
 // --------------------------------------------------
 
 const education = new Map<string, string>([
-  ["Degree", "B.E Information Technology (Currently Learning)"]
+  ["Degree", "B.E Information Technology"]
 ]);
 
 // --------------------------------------------------
@@ -128,9 +164,9 @@ export default new ProjectPortfolio();
  * $ pavan --status
  * > Status: Open to Opportunities
  * > Role: MERN Stack Developer (Fresher)
- * > Projects Loaded: Connectly | Alumni Connect
- * > Skills: React | Node | MongoDB | WebRTC
- * > Education: B.E IT (Learning)
+ * > Projects Loaded: Agent Arena | Alumni Connect | Vastra Elite
+ * > Skills: React | Node | MongoDB | WebRTC | Gen AI | LLM | RAG | Langchain | Langgraph
+ * > Education: B.E IT 
  * > Location: Global / Remote
  * > Loading Assets... [||||||||||] 100%
  * > Ready.

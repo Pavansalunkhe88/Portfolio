@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="folderBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5AC8FA"/>
+      <stop offset="100%" stop-color="#007AFF"/>
+    </linearGradient>
+    <linearGradient id="folderFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64D2FF"/>
+      <stop offset="100%" stop-color="#0A84FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Back panel -->
+  <path d="M6 16 C6 13 8 11 11 11 L24 11 C26 11 27 12 28 14 L30 18 L53 18 C56 18 58 20 58 23 L58 50 C58 53 56 55 53 55 L11 55 C8 55 6 53 6 50 Z" fill="url(#folderBack)"/>
+  <!-- Front panel -->
+  <path d="M4 24 C4 21 6 19 9 19 L55 19 C58 19 60 21 60 24 L60 52 C60 55 58 57 55 57 L9 57 C6 57 4 55 4 52 Z" fill="url(#folderFront)" opacity="0.95"/>
+  <!-- Shine -->
+  <path d="M4 24 C4 21 6 19 9 19 L55 19 C58 19 60 21 60 24 L60 28 L4 28 Z" fill="white" opacity="0.15"/>
+</svg>
